@@ -1,0 +1,104 @@
+﻿<Page
+    x:Class="SayHello.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SayHello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <AcrylicBrush x:ConnectionId='2' 
+                      x:Key="AcrylicBrushLight"
+                      BackgroundSource="HostBackdrop"
+                      TintOpacity="0" 
+                      TintColor="White"
+                      TintTransitionDuration="1"
+                      FallbackColor="White"
+                      x:Name="AcrylicBrushLight"
+         />
+        <AcrylicBrush x:ConnectionId='3' x:Key="AcrylicBrushDark"
+            BackgroundSource="HostBackdrop"
+            TintColor="#7f7f7f"
+            TintOpacity="0.1"
+            FallbackColor="#000000"
+            x:Name="AcrylicBrushDark"     
+        />
+    </Page.Resources>
+    
+    <Grid x:ConnectionId='4' x:Name="MainPageGird"   Background="{StaticResource AcrylicBrushLight}">
+        <TextBlock x:ConnectionId='5' Text="SayHello" 
+               Grid.Column="1" 
+               Style="{StaticResource CaptionTextBlockStyle}" 
+               Margin="11,8,0,0"
+               x:Name="TitleText"
+         />
+        <Button x:ConnectionId='6' 
+                x:Name="SayHelloButton" 
+                Content="打招呼" 
+                Style="{StaticResource ButtonRevealStyle}" 
+                HorizontalAlignment="Center" 
+                Height="45" 
+                VerticalAlignment="Top" 
+                Width="96" 
+                                             
+                Margin="0,410,0,0"
+                ToolTipService.ToolTip="快点我ヾ(≧▽≦*)o"
+         />
+
+        <TextBox x:ConnectionId='7' 
+                 x:Name="textBox1" 
+                 HorizontalAlignment="Center" 
+                 Height="79" 
+                 Margin="0,276,0,0" 
+                 Text="你好！" 
+                 VerticalAlignment="Top" 
+                 Width="360" 
+                 FontSize="36" 
+                 TextAlignment="Center" 
+                 BorderThickness="1,1,8,8" 
+                 IsReadOnly="True"
+                 ToolTipService.ToolTip="你好呀q(≧▽≦q)"
+         />
+
+        <CheckBox x:ConnectionId='8' 
+                  x:Name="Disapper" 
+                  Content="隐藏按钮" 
+                  HorizontalAlignment="Right" 
+                  VerticalAlignment="Bottom"  
+                  Margin="0,0,90,4" 
+                                            
+                                                
+                  Width="89"
+                  ToolTipService.ToolTip="点我隐藏/显示上面的元素ヾ(•ω•`)o"
+         />
+
+        <CommandBar x:ConnectionId='9'
+            x:Name="GoToNewPage"
+           VerticalAlignment="Bottom" 
+           HorizontalAlignment="Right"
+           Background="{StaticResource AcrylicBrushLight}">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:ConnectionId='12' 
+                x:Name="AddNewPage" 
+                Label="关于" 
+                             
+                ToolTipService.ToolTip="关于=￣ω￣="
+                >
+                <AppBarButton.Icon>
+                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE946;" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </CommandBar>
+        <Button x:ConnectionId='10' x:Name="TopButton" ToolTipService.ToolTip="启动悬浮窗模式(¬‿¬)"                 HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF5EE;" />
+        </Button>
+        <Button x:ConnectionId='11' x:Name="TopButtonBack" ToolTipService.ToolTip="关闭悬浮窗模式(¬‿¬)"                      HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Collapsed">
+            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF5EE;" />
+        </Button>
+    </Grid>
+</Page>
+

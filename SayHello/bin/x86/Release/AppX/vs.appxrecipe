@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>STEVE的COMPUTER</Machine>
+    <WindowsUser>steve</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>61ebab01-e91e-480e-a934-3775857cc6f8</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Steve</PackageIdentityPublisher>
+    <IntermediateOutputPath>E:\Code\SayHello\SayHello\obj\x86\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>F:\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>E:\Code\SayHello\SayHello\bin\x86\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>6CEF711891E1855525376239A23F1D214E76B2A2008EA55D8478ACE802BD76ED</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>61ebab01-e91e-480e-a934-3775857cc6f8_3.3.2.0_x86__kcdnnw7pbsh48</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>61ebab01-e91e-480e-a934-3775857cc6f8_kcdnnw7pbsh48!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>61ebab01-e91e-480e-a934-3775857cc6f8</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Steve</RegisteredPackagePublisher>
+    <RegisteredVersion>3.3.2.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-12-20T14:08:41.673</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\1.png">
+      <PackagePath>Assets\1.png</PackagePath>
+      <Modified>2019-03-01T14:27:17.523</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <Modified>2019-02-21T08:24:16.475</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\BadgeLogo.scale-125.png">
+      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
+      <Modified>2019-02-21T08:24:16.526</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\BadgeLogo.scale-150.png">
+      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
+      <Modified>2019-02-21T08:24:16.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\BadgeLogo.scale-200.png">
+      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
+      <Modified>2019-02-21T08:24:16.603</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\BadgeLogo.scale-400.png">
+      <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+      <Modified>2019-02-21T08:24:16.647</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <Modified>2019-05-31T11:32:44.415</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <Modified>2019-05-31T11:32:44.517</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <Modified>2019-05-31T11:32:44.612</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <Modified>2019-05-31T11:32:44.735</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <Modified>2019-05-31T11:32:45.053</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2018-11-22T11:28:53.030</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Small150x150Logo.scale-100.png">
+      <PackagePath>Assets\Small150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.242</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Small150x150Logo.scale-125.png">
+      <PackagePath>Assets\Small150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.299</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Small150x150Logo.scale-150.png">
+      <PackagePath>Assets\Small150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Small150x150Logo.scale-200.png">
+      <PackagePath>Assets\Small150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.387</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Small150x150Logo.scale-400.png">
+      <PackagePath>Assets\Small150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.448</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:46.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:46.200</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:46.311</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:46.474</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:46.979</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.517</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.580</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.662</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.726</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.876</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.850</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:46.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.522</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.701</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.602</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.092</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.172</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.261</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.300</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.346</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.561</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.483</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.384</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:45.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:47.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:47.055</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:47.094</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:47.134</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:47.184</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.923</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:43.978</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:44.041</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:44.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-05-31T11:32:44.349</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\头像.png">
+      <PackagePath>Assets\头像.png</PackagePath>
+      <Modified>2019-04-27T11:51:44.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\尤里 %282%29.jpg">
+      <PackagePath>Assets\尤里 %282%29.jpg</PackagePath>
+      <Modified>2019-04-27T11:54:27.755</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\康娜.jpg">
+      <PackagePath>Assets\康娜.jpg</PackagePath>
+      <Modified>2019-04-27T11:54:53.779</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+      <Modified>2018-10-04T05:37:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-12-20T14:07:39.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\SayHello.dll">
+      <PackagePath>SayHello.dll</PackagePath>
+      <Modified>2019-12-20T14:08:41.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\SayHello.exe">
+      <PackagePath>SayHello.exe</PackagePath>
+      <Modified>2019-12-20T14:08:41.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\SayHello.pdb">
+      <PackagePath>SayHello.pdb</PackagePath>
+      <Modified>2019-12-20T14:08:41.641</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\steve\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
+      <Name>Microsoft.NET.Native.Framework.2.1</Name>
+      <Version>2.1.26424.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\steve\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\steve\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
+      <Name>Microsoft.NET.Native.Framework.2.1</Name>
+      <Version>2.1.26424.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\steve\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\steve\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx">
+      <Name>Microsoft.NET.Native.Framework.2.1</Name>
+      <Version>2.1.26424.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\steve\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\steve\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.1.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.1</Name>
+      <Version>2.1.26424.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\steve\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\steve\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.1.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.1</Name>
+      <Version>2.1.26424.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\steve\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\steve\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.1.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.1</Name>
+      <Version>2.1.26424.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.1, MinVersion = 2.1.26424.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\steve\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

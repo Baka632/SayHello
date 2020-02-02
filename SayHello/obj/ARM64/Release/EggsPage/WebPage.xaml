@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="SayHello.EggsPage.WebPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SayHello.EggsPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <WebView  Source="https://space.bilibili.com/43758023"/>
+        <Button x:ConnectionId='2' HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,20"                    >
+            <StackPanel Orientation="Horizontal">
+                <SymbolIcon Symbol="Back"/>
+                <TextBlock Text="返回" FontSize="22" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Page>
+

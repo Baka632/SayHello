@@ -1,0 +1,167 @@
+﻿<Page
+    x:Class="SayHello.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SayHello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:xaml="using:Windows.UI.Xaml"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel  Background="{StaticResource AcrylicBrushLight}">
+        <TextBlock Text="SayHello" 
+               Grid.Column="1" 
+               Style="{StaticResource CaptionTextBlockStyle}" 
+               Margin="56,8,0,0"
+        />
+        <TextBox IsReadOnly="True" Width="1" Height="1"/>
+        <TextBox x:Name="TextAbout"
+                 Height="70" 
+                 Text="关于" 
+                 VerticalAlignment="Top" 
+                 HorizontalAlignment="Center"
+                 Width="218" 
+                 BorderThickness="2,2,8,11" 
+                 TextAlignment="Center" 
+                 FontFamily="Segoe UI" 
+                 FontSize="36" 
+                 IsReadOnly="False"
+                 Margin="0,60,0,0"
+                 ToolTipService.ToolTip="关于=￣ω￣="
+                 TextChanged="Egg"
+                 />
+        <PersonPicture 
+            ProfilePicture="/Assets/1.png" 
+            ToolTipService.ToolTip="ab_ba的头像" 
+            />
+        <StackPanel Orientation="Vertical">
+            <TextBlock x:Name="About1" 
+                 HorizontalAlignment="Center" 
+                 Height="auto" 
+                 Width="auto" 
+                 VerticalAlignment="Top" 
+                 FontSize="36" 
+                 TextAlignment="Center"
+                 TextWrapping="WrapWholeWords"
+                 MaxWidth="1000" 
+                 ToolTipService.ToolTip="干啥?认真看内容!"
+                 >
+                SayHello的作者是曾万友，你可以用电子邮件地址<Hyperlink NavigateUri="mailto:stevemc123456@outlook.com">stevemc123456@outlook.com</Hyperlink>来联系我。
+            </TextBlock>
+
+            <TextBlock x:Name="Version"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Stretch"
+                FontSize="36"
+                ToolTipService.ToolTip="认真看内容!"
+                Text="版本:3.3.2.0 "
+            />
+        </StackPanel>
+        
+
+        <Button 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            FontSize="26"
+            Margin="0,20,0,0"
+            Click="UpdatedWhat"
+            ToolTipService.ToolTip="更新了什么✪ ω ✪"
+            >
+            更新日志
+        </Button>
+        
+        <ComboBox x:Name="Theme" SelectionChanged="Theme_SelectionChanged" Header="主题(不可用)" PlaceholderText="选择一个主题..." Width="200" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <x:String>浅色</x:String>
+                <x:String>深色</x:String>
+                <x:String>使用系统设置</x:String>
+        </ComboBox>
+        
+        <StackPanel HorizontalAlignment="Center">
+            <ContentDialog
+                x:Name="UpdatedContentDialog"
+                Title="最近更新日志"
+                CloseButtonText="关闭"
+                DefaultButton="None">
+                <ScrollViewer>
+                    <StackPanel>
+                        <RichTextBlock>
+                            <Paragraph>3.3.2.0</Paragraph>
+                            <Paragraph>-更正了一些措辞</Paragraph>
+                            <Paragraph>-更改了更改主题色的控件</Paragraph>
+                            <Paragraph>-改进了'关于'界面的自适应(仍未完善)</Paragraph>
+                            <Paragraph>3.3.1.0</Paragraph>
+                            <Paragraph>-加入了悬浮窗功能</Paragraph>
+                            <Paragraph>-优化了'更新内容'的显示,现在它可以显示完整的内容了</Paragraph>
+                            <Paragraph>3.3.0.1</Paragraph>
+                            <Paragraph>-改动了文本框的位置</Paragraph>
+                            <Paragraph>-增加了对Windows 10 1903的浅色任务栏的支持</Paragraph>
+                            <Paragraph>3.3.0.0</Paragraph>
+                            <Paragraph> -加入了彩蛋与调试模式(找的到吗?) </Paragraph>
+                            <Paragraph>3.2.0.0</Paragraph>
+                            <Paragraph>-现在返回到主页时不会丢失所做的更改了</Paragraph>
+                            <Paragraph>-在标题栏上添加了标题的文本框</Paragraph>
+                            <Paragraph>3.1.3.0</Paragraph>
+                            <Paragraph>-加入了更改主题色的选项(未实装)</Paragraph>
+                            <Paragraph>3.1.2.0</Paragraph>
+                            <Paragraph>-加入了更新日志(换行真的烦)</Paragraph>
+                            <Paragraph>-将关于页的图片控件更改为个人图片控件</Paragraph>
+                            <Paragraph>-更改了页面切换效果</Paragraph>
+                            <Paragraph>-添加了工具的提示</Paragraph>
+                            <Paragraph>3.1.1.0</Paragraph>
+                            <Paragraph>-更改版本号的命名规则</Paragraph>
+                            <Paragraph>-部分解决了自适应UI的问题</Paragraph>
+                            <Paragraph>-主界面UI调整,更改了'关于'的图标,命令栏加入了Fluent Design System效果,再次移动了'隐藏按钮'的位置</Paragraph>
+                            <Paragraph>-更改了关于页的文本框控件</Paragraph>
+                            <Paragraph>0.2.3.0</Paragraph>
+                            <Paragraph>-移动了'隐藏按钮'的位置</Paragraph>
+                            <Paragraph>0.2.2.0</Paragraph>
+                            <Paragraph>-将包解决方案配置更改为Release以符合Microsoft Store的要求</Paragraph>
+                            <Paragraph>0.2.0.0</Paragraph>
+                            <Paragraph>-加入了'关于'页</Paragraph>
+                            <Paragraph>-加入了隐藏按钮功能</Paragraph>
+                            <Paragraph>0.1.6.0(初始公开版本)</Paragraph>
+                            <Paragraph>-加入了Fluent Design System效果</Paragraph>
+                        </RichTextBlock>
+                    </StackPanel>
+                </ScrollViewer>
+            </ContentDialog>
+        </StackPanel>
+        
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="LayoutVisualStates">
+                <VisualState x:Name="Phone">
+                    <VisualState.StateTriggers>
+                        <!-- VisualState to be triggered when the window width is >=640 effective pixels. -->
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="About1.FontSize" Value="16"></Setter>
+                        <Setter Target="Version.FontSize" Value="16"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="About1.FontSize" Value="20"></Setter>
+                        <Setter Target="Version.FontSize" Value="20"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                
+                <VisualState x:Name="Deskop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1008" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="About1.FontSize" Value="32"></Setter>
+                        <Setter Target="Version.FontSize" Value="32"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        
+    </StackPanel>
+</Page>

@@ -1,0 +1,22 @@
+﻿<Application
+    x:Class="SayHello.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SayHello">
+    <Application.Resources>
+        <AcrylicBrush 
+                      x:Key="AcrylicBrushLight"
+                      BackgroundSource="HostBackdrop"
+                      TintOpacity="0" 
+                      TintColor="White"
+                      TintTransitionDuration="1"
+                      FallbackColor="White"
+          />
+        <AcrylicBrush x:Key="AcrylicBrushDark"
+            BackgroundSource="HostBackdrop"
+            TintColor="#7f7f7f"
+            TintOpacity="0.1"
+            FallbackColor="#000000"
+         />
+    </Application.Resources>
+</Application>

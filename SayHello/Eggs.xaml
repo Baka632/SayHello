@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="SayHello.Eggs"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SayHello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{StaticResource AcrylicBrushLight}">
+        <Grid x:Name="AppTitleBar" Background="Transparent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+               Text="SayHello" 
+               Grid.Column="1" 
+               Style="{StaticResource CaptionTextBlockStyle}" 
+               Margin="11,8,0,0"
+             />
+        </Grid>
+        
+        
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <FontIcon Glyph="&#xEB4F;" Margin="0,20,0,0"/>
+            <TextBlock
+            Text="欢迎来到里世界!" 
+            FontSize="36"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontWeight="Medium"
+            Margin="0,20,0,0"
+            ToolTipService.ToolTip="你找到我们的彩蛋了！"
+         />
+        </StackPanel>
+
+        <TextBlock
+            Text="注意,下面的内容为彩蛋或实验性内容,要退出请按下面的'返回'按钮。" 
+            FontSize="26"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontWeight="Medium"
+            Margin="0,70,0,0"
+            TextWrapping="WrapWholeWords"
+            />
+        <Button
+            Content="返回"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Margin="0,140,0,0"
+            Click="Back"
+            FontSize="20"
+            Style="{StaticResource ButtonRevealStyle}"
+            />
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="打开颜色设置" Click="OpenColorSetting" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <Button Content="进入ab_ba的哔哩哔哩个人页" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center" Click="GoToBiliBili"/>
+        </StackPanel>
+    </Grid>
+</Page>

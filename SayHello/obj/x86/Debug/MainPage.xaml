@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="SayHello.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SayHello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <AcrylicBrush x:Key="AcrylicBrush"
+                      BackgroundSource="HostBackdrop"
+                      TintOpacity="0" 
+                      TintColor="White"
+                      TintTransitionDuration="1"
+                      FallbackColor="White"/>
+    </Page.Resources>
+    <Grid  Background="{StaticResource AcrylicBrush}">
+        <Button x:ConnectionId='2' x:Name="SayHelloButton" 
+                Content="打招呼" 
+                Style="{StaticResource ButtonRevealStyle}" 
+                HorizontalAlignment="Left" 
+                Height="45" 
+                VerticalAlignment="Top" 
+                Width="96" 
+                                             
+                Margin="692,402,0,0"
+                />
+        <TextBox x:ConnectionId='3' x:Name="textBox1" 
+                 HorizontalAlignment="Center" 
+                 Height="79" 
+                 Margin="0,288,0,0" 
+                 Text="你好！" 
+                 VerticalAlignment="Top" 
+                 Width="360" 
+                 FontSize="36" 
+                 TextAlignment="Center" 
+                 BorderThickness="1,1,8,8" 
+                 IsReadOnly="True"
+                 />
+        <CheckBox x:ConnectionId='4' x:Name="Disapper" 
+                  Content="隐藏按钮" 
+                  HorizontalAlignment="Left" 
+                  Height="28" 
+                  Margin="10,783,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="90" 
+                                            
+                                               
+                  />
+        <CommandBar Margin="0,820,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <!-- <AppBarButton Icon="Setting" Label="设置" Click="Settings"/>  -->
+            <AppBarButton x:ConnectionId='5' x:Name="AddNewPage" Icon="Setting" Label="关于"              />
+        </CommandBar>
+
+    </Grid>
+</Page>
+

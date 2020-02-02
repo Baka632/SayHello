@@ -1,0 +1,2 @@
+MainPackage=E:\Code\SayHello\SayHello\bin\x86\Release\SayHello_3.4.0.0_x86.appx
+SymbolPackage=E:\Code\SayHello\SayHello\obj\x86\Release\Symbols\SayHello_3.4.0.0_x86.appxsym
