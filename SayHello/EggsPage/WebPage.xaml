@@ -8,12 +8,12 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="{StaticResource AcrylicBrushLight}">
+    <Grid Background="{ThemeResource AcrylicBrush}">
         <WebView  Source="https://space.bilibili.com/43758023"/>
         <Button HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,20" Click="ReturnToEgg">
             <StackPanel Orientation="Horizontal">
-                <SymbolIcon Symbol="Back"/>
-                <TextBlock Text="返回" FontSize="22" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                <SymbolIcon Symbol="Back" Foreground="OrangeRed"/>
+                <TextBlock Text="返回" FontSize="22" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="OrangeRed"/>
             </StackPanel>
         </Button>
     </Grid>

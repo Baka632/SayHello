@@ -3,21 +3,33 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SayHello">
+    
     <Application.Resources>
-        <AcrylicBrush 
-                      x:Key="AcrylicBrushLight"
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <AcrylicBrush 
+                      x:Key="AcrylicBrush"
                       BackgroundSource="HostBackdrop"
                       TintOpacity="0" 
                       TintColor="White"
                       TintTransitionDuration="1"
                       FallbackColor="White"
-          />
-        <AcrylicBrush x:Key="AcrylicBrushDark"
-            BackgroundSource="HostBackdrop"
-            TintColor="#7f7f7f"
-            TintOpacity="0.1"
-            FallbackColor="#000000"
-         />
+                     />
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <AcrylicBrush 
+                        x:Key="AcrylicBrush" 
+                        BackgroundSource="HostBackdrop" 
+                        TintColor="{StaticResource SystemChromeAltHighColor}" 
+                        TintOpacity="0.6" 
+                        FallbackColor="{StaticResource SystemChromeHighColor}" 
+                     />
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+        
+        
     </Application.Resources>
 </Application>
 

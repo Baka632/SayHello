@@ -6,16 +6,18 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
     
-    <Grid x:Name="MainPageGird"   Background="{StaticResource AcrylicBrushLight}">
+    <Grid x:Name="MainPageGird"   Background="{ThemeResource AcrylicBrush}">
         <TextBlock Text="SayHello" 
                Grid.Column="1" 
                Style="{StaticResource CaptionTextBlockStyle}" 
                Margin="11,8,0,0"
                x:Name="TitleText"
          />
-        <Button 
+        <RelativePanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button 
                 x:Name="SayHelloButton" 
                 Content="打招呼" 
                 Style="{StaticResource ButtonRevealStyle}" 
@@ -24,15 +26,15 @@
                 VerticalAlignment="Top" 
                 Width="96" 
                 Click="SayHelloButton_Click" 
-                Margin="0,410,0,0"
                 ToolTipService.ToolTip="快点我ヾ(≧▽≦*)o"
-         />
-
-        <TextBox 
+                RelativePanel.Below="textBox1"
+                RelativePanel.AlignVerticalCenterWithPanel="True"
+                RelativePanel.AlignHorizontalCenterWithPanel="True"
+            />
+            <TextBox 
                  x:Name="textBox1" 
                  HorizontalAlignment="Center" 
                  Height="79" 
-                 Margin="0,276,0,0" 
                  Text="你好！" 
                  VerticalAlignment="Top" 
                  Width="360" 
@@ -41,7 +43,12 @@
                  BorderThickness="1,1,8,8" 
                  IsReadOnly="True"
                  ToolTipService.ToolTip="你好呀q(≧▽≦q)"
+                 RelativePanel.AlignVerticalCenterWithPanel="True"
+                 RelativePanel.AlignHorizontalCenterWithPanel="True"
+                 Margin="0,0,0,20"
          />
+        </RelativePanel>
+        
 
         <CheckBox 
                   x:Name="Disapper" 
@@ -54,12 +61,11 @@
                   Width="89"
                   ToolTipService.ToolTip="点我隐藏/显示上面的元素ヾ(•ω•`)o"
          />
-
         <CommandBar
             x:Name="GoToNewPage"
            VerticalAlignment="Bottom" 
            HorizontalAlignment="Right"
-           Background="{StaticResource AcrylicBrushLight}">
+           Background="{ThemeResource AcrylicBrush}">
             <CommandBar.Content>
                 <Grid/>
             </CommandBar.Content>
@@ -68,16 +74,16 @@
                 Label="关于" 
                 Click="About"
                 ToolTipService.ToolTip="关于=￣ω￣="
-                >
+            >
                 <AppBarButton.Icon>
                     <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE946;" />
                 </AppBarButton.Icon>
             </AppBarButton>
         </CommandBar>
-        <Button x:Name="TopButton" ToolTipService.ToolTip="启动悬浮窗模式(¬‿¬)" Click="TopMode" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+        <Button Background="{ThemeResource AcrylicBrush}" x:Name="TopButton" ToolTipService.ToolTip="启动悬浮窗模式(¬‿¬)" Click="TopMode" HorizontalAlignment="Left" VerticalAlignment="Bottom">
             <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF5EE;" />
         </Button>
-        <Button x:Name="TopButtonBack" ToolTipService.ToolTip="关闭悬浮窗模式(¬‿¬)" Click="CloseTopMode" HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Collapsed">
+        <Button Background="{ThemeResource AcrylicBrush}" x:Name="TopButtonBack" ToolTipService.ToolTip="关闭悬浮窗模式(¬‿¬)" Click="CloseTopMode" HorizontalAlignment="Left" VerticalAlignment="Bottom" Visibility="Collapsed">
             <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF5EE;" />
         </Button>
     </Grid>

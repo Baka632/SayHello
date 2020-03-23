@@ -20,6 +20,8 @@ using Windows.UI.Popups;
 using Windows.Storage;
 using Windows.UI.ViewManagement;
 using Windows.ApplicationModel;
+using Microsoft.Toolkit.Uwp.Notifications;
+using Windows.UI.Notifications;
 
 // https://go.microsoft.com/fwlink/?LinkId=234238 上介绍了“空白页”项模板
 
@@ -65,6 +67,31 @@ namespace SayHello
         private void Theme_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+            var toastContent = new ToastContent()
+            {
+                Visual = new ToastVisual()
+                {
+                    BindingGeneric = new ToastBindingGeneric()
+                    {
+                        Children =
+                        {
+                            new AdaptiveText()
+                            {
+                                Text = "提示"
+                            },
+                            new AdaptiveText()
+                            {
+                                Text = "在更改主题后请务必重启应用"
+                            }
+                        }
+                    }
+                }
+            };
+            // Create the toast notification
+            var toastNotif = new ToastNotification(toastContent.GetXml());
+
+            // And send the notification
+            ToastNotificationManager.CreateToastNotifier().Show(toastNotif);
         }
 
         private void Egg(object sender, TextChangedEventArgs e)
@@ -84,6 +111,14 @@ namespace SayHello
             }
         }
 
-        
+        private async void Mail(object sender, RoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("mailto:stevemc123456@outlook.com"));
+        }
+
+        private async void Github(object sender, RoutedEventArgs e)
+        {
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("https://github.com/Baka632"));
+        }
     }
 }

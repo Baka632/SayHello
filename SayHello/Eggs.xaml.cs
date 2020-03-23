@@ -26,6 +26,7 @@ namespace SayHello
         public Eggs()
         {
             this.InitializeComponent();
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
 
         private void Back(object sender, RoutedEventArgs e)

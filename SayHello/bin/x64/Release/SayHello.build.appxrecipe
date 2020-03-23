@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>61ebab01-e91e-480e-a934-3775857cc6f8</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Steve</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Baka632</PackageIdentityPublisher>
     <IntermediateOutputPath>E:\Code\SayHello\SayHello\obj\x64\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
@@ -42,6 +42,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x64\Release\ilc\Assets\BadgeLogo.scale-400.png">
       <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x64\Release\ilc\Assets\GitHub-Mark-32px.png">
+      <PackagePath>Assets\GitHub-Mark-32px.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x64\Release\ilc\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>

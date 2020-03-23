@@ -34,5 +34,6 @@
 "E:\Code\SayHello\SayHello\obj\x64\Release\PackageLayout\Assets\Small150x150Logo.scale-200.png"			"Assets\Small150x150Logo.scale-200.png"
 "E:\Code\SayHello\SayHello\obj\x64\Release\PackageLayout\Assets\LockScreenLogo.scale-200.png"			"Assets\LockScreenLogo.scale-200.png"
 "E:\Code\SayHello\SayHello\obj\x64\Release\PackageLayout\Assets\LargeTile.scale-200.png"			"Assets\LargeTile.scale-200.png"
+"E:\Code\SayHello\SayHello\obj\x64\Release\PackageLayout\Assets\GitHub-Mark-32px.png"			"Assets\GitHub-Mark-32px.png"
 "E:\Code\SayHello\SayHello\obj\x64\Release\PackageLayout\Assets\BadgeLogo.scale-200.png"			"Assets\BadgeLogo.scale-200.png"
 "E:\Code\SayHello\SayHello\obj\x64\Release\PackageLayout\Assets\1.png"			"Assets\1.png"

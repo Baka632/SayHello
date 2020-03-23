@@ -7,23 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.Resources>
-        <AcrylicBrush 
-                      x:Key="AcrylicBrushLight"
-                      BackgroundSource="HostBackdrop"
-                      TintOpacity="0" 
-                      TintColor="White"
-                      TintTransitionDuration="1"
-                      FallbackColor="White"
-          />
-        <AcrylicBrush x:Key="AcrylicBrushDark"
-            BackgroundSource="HostBackdrop"
-            TintColor="#7f7f7f"
-            TintOpacity="0.1"
-            FallbackColor="#000000"/>
-    </Page.Resources>
 
-    <Grid Background="{StaticResource AcrylicBrushLight}">
+    <Grid Background="{ThemeResource AcrylicBrush}">
         <Grid x:ConnectionId='2' x:Name="AppTitleBar" Background="Transparent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0"/>

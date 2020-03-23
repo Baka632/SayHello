@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>61ebab01-e91e-480e-a934-3775857cc6f8</PackageIdentityName>
-    <PackageIdentityPublisher>CN=Steve</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Baka632</PackageIdentityPublisher>
     <IntermediateOutputPath>E:\Code\SayHello\SayHello\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
@@ -19,18 +19,18 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>F:\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\Code\SayHello\SayHello\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>6CEF711891E1855525376239A23F1D214E76B2A2008EA55D8478ACE802BD76ED</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>61ebab01-e91e-480e-a934-3775857cc6f8_3.3.2.0_x86__kcdnnw7pbsh48</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>61ebab01-e91e-480e-a934-3775857cc6f8_kcdnnw7pbsh48!App</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>B59BA3F736A37E047B723A429D17CF2A87A4DB9A0AEDA1983046B861F7CF9432</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>61ebab01-e91e-480e-a934-3775857cc6f8_3.5.0.0_x86__xrr5xv0r1z0t2</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>61ebab01-e91e-480e-a934-3775857cc6f8_xrr5xv0r1z0t2!App</RegisteredUserModeAppID>
     <RegisteredPackageID>61ebab01-e91e-480e-a934-3775857cc6f8</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=Steve</RegisteredPackagePublisher>
-    <RegisteredVersion>3.3.2.0</RegisteredVersion>
+    <RegisteredPackagePublisher>CN=Baka632</RegisteredPackagePublisher>
+    <RegisteredVersion>3.5.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-12-20T14:08:41.673</Modified>
+      <Modified>2020-03-23T05:24:56.994</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +57,10 @@
     <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\BadgeLogo.scale-400.png">
       <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
       <Modified>2019-02-21T08:24:16.647</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\GitHub-Mark-32px.png">
+      <PackagePath>Assets\GitHub-Mark-32px.png</PackagePath>
+      <Modified>2020-03-23T03:56:47.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -325,19 +329,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-12-20T14:07:39.989</Modified>
+      <Modified>2020-03-23T05:24:16.085</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\SayHello.dll">
       <PackagePath>SayHello.dll</PackagePath>
-      <Modified>2019-12-20T14:08:41.411</Modified>
+      <Modified>2020-03-23T05:24:56.520</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\SayHello.exe">
       <PackagePath>SayHello.exe</PackagePath>
-      <Modified>2019-12-20T14:08:41.643</Modified>
+      <Modified>2020-03-23T05:24:56.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Code\SayHello\SayHello\bin\x86\Release\ilc\SayHello.pdb">
       <PackagePath>SayHello.pdb</PackagePath>
-      <Modified>2019-12-20T14:08:41.641</Modified>
+      <Modified>2020-03-23T05:24:56.974</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

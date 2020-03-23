@@ -9,28 +9,12 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Page.Resources>
-        <AcrylicBrush 
-                      x:Key="AcrylicBrushLight"
-                      BackgroundSource="HostBackdrop"
-                      TintOpacity="0" 
-                      TintColor="White"
-                      TintTransitionDuration="1"
-                      FallbackColor="White"
-          />
-        <AcrylicBrush x:Key="AcrylicBrushDark"
-            BackgroundSource="HostBackdrop"
-            TintColor="#7f7f7f"
-            TintOpacity="0.1"
-            FallbackColor="#000000"/>
-    </Page.Resources>
-
-    <StackPanel  Background="{StaticResource AcrylicBrushLight}">
+    <StackPanel  Background="{ThemeResource AcrylicBrush}">
         <TextBlock Text="SayHello" 
                Grid.Column="1" 
                Style="{StaticResource CaptionTextBlockStyle}" 
                Margin="56,8,0,0"
-                   />
+        />
         <TextBox IsReadOnly="True" Width="1" Height="1"/>
         <TextBox x:ConnectionId='2' x:Name="TextAbout"
                  Height="70" 
@@ -51,75 +35,63 @@
             ProfilePicture="/Assets/1.png" 
             ToolTipService.ToolTip="ab_ba的头像" 
             />
-
-        <TextBlock x:ConnectionId='3' x:Name="About1" 
+        <StackPanel Orientation="Vertical">
+            <StackPanel>
+               <TextBlock x:ConnectionId='7' x:Name="About1" 
                  HorizontalAlignment="Center" 
-                 Height="200" 
-                 Width="504" 
-                 Text="SayHello的作者是曾万友，你可以用电子邮件地址stevemc123456@outlook.com来联系我。" 
+                 Height="auto" 
+                 Width="auto" 
                  VerticalAlignment="Top" 
                  FontSize="36" 
                  TextAlignment="Center"
-                 TextWrapping="Wrap"
+                 TextWrapping="WrapWholeWords"
                  MaxWidth="1000" 
-                 Margin="0,0,0,0"
                  ToolTipService.ToolTip="干啥?认真看内容!"
-                 />
+                 >
+                SayHello的作者是Baka632，你可以用下面的联系方式来联系我。
+                </TextBlock>
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                    <Button x:ConnectionId='8'              Width="40" Height="40" Margin="0,0,5,0" ToolTipService.ToolTip="邮件"  Style="{StaticResource ButtonRevealStyle}">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE119;" />
+                    </Button>
+                    <Button x:ConnectionId='9'                Width="40" Height="40" ToolTipService.ToolTip="GitHub"  Style="{StaticResource ButtonRevealStyle}">
+                        <Image Source="/Assets/GitHub-Mark-32px.png" Stretch="UniformToFill" Width="19" Height="19"/>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            
 
-        <TextBlock
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            FontSize="36"
-            Margin="0,30,0,0"
-            ToolTipService.ToolTip="认真看内容!"
-            Text="版本:3.3.0.1"
+            <TextBlock x:ConnectionId='6' x:Name="Version"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Stretch"
+                FontSize="36"
+                ToolTipService.ToolTip="认真看内容!"
+                Text="版本:3.3.2.0 "
             />
+        </StackPanel>
+        
 
-        <Button x:ConnectionId='4' 
+        <Button x:ConnectionId='3' 
             HorizontalAlignment="Center"
             VerticalAlignment="Bottom"
             FontSize="26"
             Margin="0,20,0,0"
                                
             ToolTipService.ToolTip="更新了什么✪ ω ✪"
+             Style="{StaticResource ButtonRevealStyle}"
             >
             更新日志
         </Button>
 
+        <ComboBox x:ConnectionId='4' x:Name="Theme"                                           Header="主题(不可用)" PlaceholderText="选择一个主题..." Width="200" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <x:String>浅色</x:String>
+                <x:String>深色</x:String>
+                <x:String>使用系统设置</x:String>
+        </ComboBox>
+        
         <StackPanel HorizontalAlignment="Center">
-            <TextBlock 
-                    Text="模式(未实装)"
-                    TextAlignment="Left"
-                    FontSize="24"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    />
-
-            <RadioButton x:ConnectionId='5'
-                    FontSize="24"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Content="浅色"
-                    IsChecked="True"
-                                                      
-                    />
-
-            <RadioButton x:ConnectionId='6'
-                    FontSize="24"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Content="深色"
-                                                     
-             />
-
-            <RadioButton x:ConnectionId='7'
-                    FontSize="24"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left" 
-                    Content="使用系统设置"
-                                                       
-             />
-            <ContentDialog x:ConnectionId='8'
+            <ContentDialog x:ConnectionId='5'
                 x:Name="UpdatedContentDialog"
                 Title="最近更新日志"
                 CloseButtonText="关闭"
@@ -127,7 +99,20 @@
                 <ScrollViewer>
                     <StackPanel>
                         <RichTextBlock>
-                            <Paragraph>3.3.4.0</Paragraph>
+                            <Paragraph>3.5.0.0</Paragraph>
+                            <Paragraph>-更改了"关于"页的联系方式</Paragraph>
+                            <Paragraph>-修复了返回到主页时"返回"按钮仍存在的问题</Paragraph>
+                            <Paragraph>-由于证书过期,更新了证书文件(Steve→Baka632)</Paragraph>
+                            <Paragraph>-关于页上的作者名称因隐私原因更改</Paragraph>
+                            <Paragraph>3.4.0.0</Paragraph>
+                            <Paragraph>-加入了对浅色和深色主题的完整支持(但只能跟随系统设置,不能自行调整)</Paragraph>
+                            <Paragraph>(!)注意:在更改主题后请重启应用以获得更好的体验</Paragraph>
+                            <Paragraph>-完善了主页面的自适应</Paragraph>
+                            <Paragraph>3.3.2.0</Paragraph>
+                            <Paragraph>-更正了一些措辞</Paragraph>
+                            <Paragraph>-更改了更改主题色的控件</Paragraph>
+                            <Paragraph>-改进了'关于'界面的自适应(仍未完善)</Paragraph>
+                            <Paragraph>3.3.1.0</Paragraph>
                             <Paragraph>-加入了悬浮窗功能</Paragraph>
                             <Paragraph>-优化了'更新内容'的显示,现在它可以显示完整的内容了</Paragraph>
                             <Paragraph>3.3.0.1</Paragraph>
@@ -146,10 +131,10 @@
                             <Paragraph>-更改了页面切换效果</Paragraph>
                             <Paragraph>-添加了工具的提示</Paragraph>
                             <Paragraph>3.1.1.0</Paragraph>
-                            <Paragraph>--更改版本号的命名规则</Paragraph>
-                            <Paragraph>--彻底解决了自适应UI的问题</Paragraph>
-                            <Paragraph>--主界面UI调整,更改了'关于'的图标,命令栏加入了Fluent Design System效果,再次移动了'隐藏按钮'的位置</Paragraph>
-                            <Paragraph>--更改了关于页的文本框控件</Paragraph>
+                            <Paragraph>-更改版本号的命名规则</Paragraph>
+                            <Paragraph>-部分解决了自适应UI的问题</Paragraph>
+                            <Paragraph>-主界面UI调整,更改了'关于'的图标,命令栏加入了Fluent Design System效果,再次移动了'隐藏按钮'的位置</Paragraph>
+                            <Paragraph>-更改了关于页的文本框控件</Paragraph>
                             <Paragraph>0.2.3.0</Paragraph>
                             <Paragraph>-移动了'隐藏按钮'的位置</Paragraph>
                             <Paragraph>0.2.2.0</Paragraph>
@@ -164,6 +149,42 @@
                 </ScrollViewer>
             </ContentDialog>
         </StackPanel>
+        
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='10' x:Name="LayoutVisualStates">
+                <VisualState x:ConnectionId='11' x:Name="Phone">
+                    <VisualState.StateTriggers>
+                        <!-- VisualState to be triggered when the window width is >=640 effective pixels. -->
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="About1.FontSize" Value="16"></Setter>
+                        <Setter Target="Version.FontSize" Value="16"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='12' x:Name="Tablet">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="About1.FontSize" Value="20"></Setter>
+                        <Setter Target="Version.FontSize" Value="20"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                
+                <VisualState x:ConnectionId='13' x:Name="Deskop">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1008" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="About1.FontSize" Value="32"></Setter>
+                        <Setter Target="Version.FontSize" Value="32"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        
     </StackPanel>
 </Page>
 

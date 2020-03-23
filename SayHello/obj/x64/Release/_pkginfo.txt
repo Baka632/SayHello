@@ -1,1 +1,1 @@
-E:\Code\SayHello\SayHello\AppPackages\SayHello_3.4.0.0_Test\SayHello_3.4.0.0_x86_x64_arm.appxbundle
+E:\Code\SayHello\SayHello\AppPackages\SayHello_3.5.0.0_Test\SayHello_3.5.0.0_x86_x64.appxbundle

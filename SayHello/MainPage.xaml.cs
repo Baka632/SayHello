@@ -7,6 +7,9 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
 using Windows.UI.ViewManagement;
+using Windows.UI.Notifications;
+using Microsoft.Toolkit.Uwp.Notifications; // Notifications library
+using Windows.UI.Xaml.Navigation;
 // https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x804 上介绍了“空白页”项模板
 
 namespace SayHello  //名称
@@ -24,7 +27,21 @@ namespace SayHello  //名称
             rand = new Random();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
-
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        {
+            bool modeSwitched = await ApplicationView.GetForCurrentView().TryEnterViewModeAsync(ApplicationViewMode.Default);
+            Frame rootFrame = Window.Current.Content as Frame;
+            if (Frame.CanGoBack)
+            {
+                // Show UI in title bar if opted-in and in-app backstack is not empty.
+                SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            }
+            else
+            {
+                // Remove the UI from the title bar if in-app back stack is empty.
+                SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+            }
+        }
         private byte[] GetRandomBytes(int n)
         {
             //用随机数填充长度为 "n" 的字节数组。

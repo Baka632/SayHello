@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel  Background="{StaticResource AcrylicBrushLight}">
+    <StackPanel  Background="{ThemeResource AcrylicBrush}">
         <TextBlock Text="SayHello" 
                Grid.Column="1" 
                Style="{StaticResource CaptionTextBlockStyle}" 
@@ -36,7 +36,8 @@
             ToolTipService.ToolTip="ab_ba的头像" 
             />
         <StackPanel Orientation="Vertical">
-            <TextBlock x:ConnectionId='6' x:Name="About1" 
+            <StackPanel>
+               <TextBlock x:ConnectionId='7' x:Name="About1" 
                  HorizontalAlignment="Center" 
                  Height="auto" 
                  Width="auto" 
@@ -47,10 +48,21 @@
                  MaxWidth="1000" 
                  ToolTipService.ToolTip="干啥?认真看内容!"
                  >
-                SayHello的作者是曾万友，你可以用电子邮件地址<Hyperlink NavigateUri="mailto:stevemc123456@outlook.com">stevemc123456@outlook.com</Hyperlink>来联系我。
-            </TextBlock>
+                SayHello的作者是Baka632，你可以用下面的联系方式来联系我。
+                </TextBlock>
+                
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+                    <Button x:ConnectionId='8'              Width="40" Height="40" Margin="0,0,5,0" ToolTipService.ToolTip="邮件"  Style="{StaticResource ButtonRevealStyle}">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE119;" />
+                    </Button>
+                    <Button x:ConnectionId='9'                Width="40" Height="40" ToolTipService.ToolTip="GitHub"  Style="{StaticResource ButtonRevealStyle}">
+                        <Image Source="/Assets/GitHub-Mark-32px.png" Stretch="UniformToFill" Width="19" Height="19"/>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            
 
-            <TextBlock x:ConnectionId='7' x:Name="Version"
+            <TextBlock x:ConnectionId='6' x:Name="Version"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Stretch"
                 FontSize="36"
@@ -67,10 +79,11 @@
             Margin="0,20,0,0"
                                
             ToolTipService.ToolTip="更新了什么✪ ω ✪"
+             Style="{StaticResource ButtonRevealStyle}"
             >
             更新日志
         </Button>
-        
+
         <ComboBox x:ConnectionId='4' x:Name="Theme"                                           Header="主题(不可用)" PlaceholderText="选择一个主题..." Width="200" HorizontalAlignment="Center" VerticalAlignment="Bottom">
                 <x:String>浅色</x:String>
                 <x:String>深色</x:String>
@@ -86,6 +99,15 @@
                 <ScrollViewer>
                     <StackPanel>
                         <RichTextBlock>
+                            <Paragraph>3.5.0.0</Paragraph>
+                            <Paragraph>-更改了"关于"页的联系方式</Paragraph>
+                            <Paragraph>-修复了返回到主页时"返回"按钮仍存在的问题</Paragraph>
+                            <Paragraph>-由于证书过期,更新了证书文件(Steve→Baka632)</Paragraph>
+                            <Paragraph>-关于页上的作者名称因隐私原因更改</Paragraph>
+                            <Paragraph>3.4.0.0</Paragraph>
+                            <Paragraph>-加入了对浅色和深色主题的完整支持(但只能跟随系统设置,不能自行调整)</Paragraph>
+                            <Paragraph>(!)注意:在更改主题后请重启应用以获得更好的体验</Paragraph>
+                            <Paragraph>-完善了主页面的自适应</Paragraph>
                             <Paragraph>3.3.2.0</Paragraph>
                             <Paragraph>-更正了一些措辞</Paragraph>
                             <Paragraph>-更改了更改主题色的控件</Paragraph>
@@ -129,12 +151,11 @@
         </StackPanel>
         
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='8' x:Name="LayoutVisualStates">
-                <VisualState x:ConnectionId='9' x:Name="Phone">
+            <VisualStateGroup x:ConnectionId='10' x:Name="LayoutVisualStates">
+                <VisualState x:ConnectionId='11' x:Name="Phone">
                     <VisualState.StateTriggers>
                         <!-- VisualState to be triggered when the window width is >=640 effective pixels. -->
                         <AdaptiveTrigger MinWindowWidth="0" />
-                        <AdaptiveTrigger MinWindowHeight="0" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="About1.FontSize" Value="16"></Setter>
@@ -142,10 +163,9 @@
                     </VisualState.Setters>
                 </VisualState>
 
-                <VisualState x:ConnectionId='10' x:Name="Tablet">
+                <VisualState x:ConnectionId='12' x:Name="Tablet">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="640" />
-                        <AdaptiveTrigger MinWindowHeight="640" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="About1.FontSize" Value="20"></Setter>
@@ -153,10 +173,9 @@
                     </VisualState.Setters>
                 </VisualState>
                 
-                <VisualState x:ConnectionId='11' x:Name="Deskop">
+                <VisualState x:ConnectionId='13' x:Name="Deskop">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="1008" />
-                        <AdaptiveTrigger MinWindowHeight="1008" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="About1.FontSize" Value="32"></Setter>

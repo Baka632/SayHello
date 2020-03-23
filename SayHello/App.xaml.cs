@@ -67,7 +67,7 @@ namespace SayHello
             coreTitleBar.ExtendViewIntoTitleBar = true;
             //标题栏按钮颜色
             var titleBar = ApplicationView.GetForCurrentView().TitleBar;
-            titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
+            //titleBar.ButtonForegroundColor = Windows.UI.Colors.Black;
             titleBar.ButtonBackgroundColor = Windows.UI.Colors.Transparent;
             // 不要在窗口已包含内容时重复应用程序初始化，
             // 只需确保窗口处于活动状态

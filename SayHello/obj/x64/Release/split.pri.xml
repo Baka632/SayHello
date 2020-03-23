@@ -43,6 +43,11 @@
 						<Value>Assets\BadgeLogo.scale-200.png</Value>
 					</Candidate>
 				</NamedResource>
+				<NamedResource name="GitHub-Mark-32px.png" uri="ms-resource://61ebab01-e91e-480e-a934-3775857cc6f8/Files/Assets/GitHub-Mark-32px.png">
+					<Candidate type="Path">
+						<Value>Assets\GitHub-Mark-32px.png</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="LargeTile.png" uri="ms-resource://61ebab01-e91e-480e-a934-3775857cc6f8/Files/Assets/LargeTile.png">
 					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
 						<Value>Assets\LargeTile.scale-200.png</Value>

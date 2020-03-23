@@ -1,2 +1,6 @@
-MainPackage=E:\Code\SayHello\SayHello\bin\x64\Release\SayHello_3.4.0.0_x64.appx
-SymbolPackage=E:\Code\SayHello\SayHello\obj\x64\Release\Symbols\SayHello_3.4.0.0_x64.appxsym
+MainPackage=E:\Code\SayHello\SayHello\bin\x64\Release\SayHello_3.5.0.0_x64.appx
+SymbolPackage=E:\Code\SayHello\SayHello\obj\x64\Release\Symbols\SayHello_3.5.0.0_x64.appxsym
+ResourcePack=E:\Code\SayHello\SayHello\bin\x64\Release\SayHello_3.5.0.0_scale-100.appx
+ResourcePack=E:\Code\SayHello\SayHello\bin\x64\Release\SayHello_3.5.0.0_scale-125.appx
+ResourcePack=E:\Code\SayHello\SayHello\bin\x64\Release\SayHello_3.5.0.0_scale-150.appx
+ResourcePack=E:\Code\SayHello\SayHello\bin\x64\Release\SayHello_3.5.0.0_scale-400.appx

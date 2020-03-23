@@ -1,7 +1,8 @@
-﻿"E:\Code\SayHello\SayHello\obj\x86\Release\ilc\in\SayHello.exe"
+﻿"E:\Code\SayHello\SayHello\obj\x86\Release\ilc\in\Microsoft.Toolkit.Uwp.Notifications.dll"
+"E:\Code\SayHello\SayHello\obj\x86\Release\ilc\in\SayHello.exe"
 /Lib:"E:\Code\SayHello\SayHello\obj\x86\Release\ilc\in"
 /Lib:"C:\Users\steve\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.1.8\tools\x86\ilc\lib\Private"
 /WinMD:"E:\Code\SayHello\SayHello\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:"{"IsOptedIn":true,"HostName":"Dev14","AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","AppId":1001,"UserId":"5f3fb01a-c79d-40af-ac9d-2d69878c1b34","Id":"f2e10c14-3522-4aad-95da-7d67dcf81f53","ProcessStartTime":637124384827049644}"
+/VSTelemetrySessionSettings:"{"IsOptedIn":true,"HostName":"Dev14","AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","AppId":1001,"UserId":"5f3fb01a-c79d-40af-ac9d-2d69878c1b34","Id":"22831af3-07ae-46b2-8004-69a656f269cd","ProcessStartTime":637205222002183015}"
 /RdXmlPath:"C:\Users\steve\.nuget\packages\microsoft.net.native.compiler\2.1.8\tools\LibraryXML"
 /RunOnlyPreDR
